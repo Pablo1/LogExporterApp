@@ -28,6 +28,7 @@ namespace LogExporter.Sinks
 
                 writer.Flush();
                 target.WriteByte((byte)'\n');
+                writer.Reset();
             }
         }
     }
